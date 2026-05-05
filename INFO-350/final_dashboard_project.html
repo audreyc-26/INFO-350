@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="project_3_chen.css">
+</head>
+<body>
+
+<h1>My Dashboard</h1>
+
+<!-- USER PROFILE -->
+<section class="card">
+    <h2>User Profile</h2>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <input type="number" id="ageInput" placeholder="Enter age">
+    <button id="saveProfileBtn">Save</button>
+    <p id="profileDisplay"></p>
+</section>
+
+<!-- TASK MANAGER -->
+<section class="card">
+    <h2>Task Manager</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add</button>
+    <button onclick="showCompleted()">Show Completed</button>
+    <ul id="taskList"></ul>
+</section>
+
+<!-- FETCHED DATA -->
+<section class="card">
+    <h2>Fetched Data</h2>
+
+    <div class="api-controls">
+        <button id="loadUsersBtn" title="Fetch users">Load Users</button>
+        <button id="loadPostsBtn" title="Fetch posts">Load Posts</button>
+        <button id="clearUsersBtn" title="Clear data">Clear</button>
+    </div>
+
+    <p id="apiStatus"></p>
+    <ul id="userList"></ul>
+</section>
+
+<script src="project_3_chen - Copy.js"></script>
+
+</body>
+</html>
